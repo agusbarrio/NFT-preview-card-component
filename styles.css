@@ -1,0 +1,157 @@
+/* Variables */
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--main-bg);
+  margin: 0;
+  height: 100vh;
+}
+
+/* Card styles */
+.card {
+  width: 19rem;
+  background-color: var(--card-bg);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.card-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  background-color: var(--cyan);
+  border-radius: 0.6rem;
+}
+
+.card-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: opacity 400ms ease-in-out;
+}
+
+.card-photo:hover img {
+  opacity: 0.5;
+}
+
+.card-photo svg {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 400ms ease-in-out;
+}
+
+.card-photo:hover svg {
+  opacity: 1;
+}
+
+.card h2 {
+  transition: color 400ms ease-in-out;
+}
+
+.card h2:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.card-status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card figure {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.card hr {
+  height: 2px;
+  background-color: var(--line-color);
+  border-width: 0;
+}
+
+.card > figure {
+  gap: 1.25rem;
+}
+
+.card figure img {
+  border: medium solid var(--white);
+  border-radius: 50%;
+  width: 15%;
+}
+
+.card span {
+  transition: color 400ms ease-in-out;
+}
+
+.card span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.attribution {
+  align-self: flex-end;
+  width: 100%;
+  background-color: orange;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution p {
+  margin: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Utilities */
+.text-light {
+  font-weight: 300;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-soft-blue {
+  color: var(--soft-blue);
+}
+
+.text-cyan {
+  color: var(--cyan);
+}
