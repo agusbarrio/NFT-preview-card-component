@@ -45,6 +45,7 @@ body {
   max-width: 100%;
   background-color: var(--cyan);
   border-radius: 0.6rem;
+  cursor: pointer;
 }
 
 .card-photo img {
