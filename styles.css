@@ -100,7 +100,7 @@ body {
   gap: 1.25rem;
 }
 
-.card figure img {
+.card > figure img {
   border: medium solid var(--white);
   border-radius: 50%;
   width: 15%;
